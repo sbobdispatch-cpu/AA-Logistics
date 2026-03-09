@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AA Logistics | Truck Dispatch Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:black;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid #222;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:#ff3c00;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+font-size:15px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff3c00;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+color:#bbb;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff3c00;
+border-radius:5px;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff5e2e;
+}
+
+/* SECTION */
+
+.section{
+padding:90px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:60px;
+color:#ff3c00;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.service{
+background:#161616;
+padding:35px;
+border-radius:10px;
+transition:.3s;
+border:1px solid #222;
+text-align:center;
+}
+
+.service:hover{
+transform:translateY(-10px);
+border-color:#ff3c00;
+}
+
+.service h3{
+margin-bottom:10px;
+color:#ff3c00;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stat{
+background:#151515;
+padding:30px;
+border-radius:8px;
+}
+
+.stat h2{
+color:#ff3c00;
+font-size:40px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.testimonial{
+background:#151515;
+padding:30px;
+border-radius:8px;
+font-style:italic;
+}
+
+/* FORM */
+
+form{
+max-width:600px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+background:#1a1a1a;
+color:white;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#ff3c00;
+border:none;
+color:white;
+font-weight:600;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+margin-top:60px;
+color:#aaa;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:38px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<div class="logo">AA Logistics</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#stats">Stats</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>Reliable Dispatch Services Across the USA</h1>
+
+<p>
+Helping owner operators and carriers find profitable loads,
+negotiate strong rates, and stay moving across the United States.
+</p>
+
+<a class="btn" href="#contact">Start Dispatching</a>
+
+</div>
+
+</section>
+
+
+
+<section id="about" class="section">
+
+<h2 class="title">About AA Logistics</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7">
+
+<p>
+
+AA Logistics is a professional truck dispatch company focused on helping
+owner operators and small trucking companies increase their revenue while
+reducing operational stress.
+
+Our dispatch team connects drivers with reliable brokers and consistent
+freight across the United States. From negotiating rates to handling
+paperwork and route planning, we manage the logistics so drivers can focus
+on driving and delivering safely.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="services" class="section">
+
+<h2 class="title">Dispatch Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Dry Van Dispatch</h3>
+<p>Consistent freight opportunities for dry van carriers.</p>
+</div>
+
+<div class="service">
+<h3>Reefer Dispatch</h3>
+<p>Temperature-controlled freight with strong rate negotiation.</p>
+</div>
+
+<div class="service">
+<h3>Flatbed Dispatch</h3>
+<p>Specialized loads including construction and industrial freight.</p>
+</div>
+
+<div class="service">
+<h3>Dedicated Lanes</h3>
+<p>Stable lanes to ensure predictable weekly income.</p>
+</div>
+
+<div class="service">
+<h3>Broker Negotiation</h3>
+<p>We negotiate top market rates for every load.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="stats" class="section">
+
+<h2 class="title">Our Performance</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Loads Booked</p>
+</div>
+
+<div class="stat">
+<h2>120+</h2>
+<p>Partner Carriers</p>
+</div>
+
+<div class="stat">
+<h2>48</h2>
+<p>States Covered</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Dispatcher Support</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2 class="title">Driver Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+AA Logistics helped me find consistent loads every week.
+Their dispatchers negotiate great rates.
+</div>
+
+<div class="testimonial">
+Reliable dispatch team and great communication.
+My truck stays loaded.
+</div>
+
+<div class="testimonial">
+Very professional dispatch service.
+They handle everything while I focus on driving.
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="section">
+
+<h2 class="title">Contact Us</h2>
+
+<p style="text-align:center;margin-bottom:20px;">
+Email: sboblogistics2@gmail.com  
+<br>
+Phone: +92319701042  
+<br>
+WhatsApp: +92197010742
+</p>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
+
+<a class="whatsapp" href="https://wa.me/92197010742">W</a>
+
+
+
+<footer>
+
+<p>© 2026 AA Logistics | Truck Dispatch Services Across the USA</p>
+
+</footer>
+
+
+</body>
+</html>
